@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+</head>
+<body>
+<div>
+    안녕하세요. 현재 상태와 뭐 여러가지를 보여줍니다.
+</div>
+<div>
+    <ul>
+        <li>
+            <a href="/login">로그인페이지 이동</a>
+        </li>
+        <li>
+            <span id="login-user" th:text="${userName}">사용자</span>님, 안녕하세요.
+        </li>
+        <li>
+            email: <span id="login-email" th:text="${userEmail}"/>
+        </li>
+        <li>
+            role: <span id="login-role" th:text="${userRole}"/>
+        </li>
+        <li>
+            <a href="/logout">로그아웃하기</a>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>
